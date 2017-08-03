@@ -61,7 +61,7 @@ categories: jekyll update
 3.6 多维数组
 
 1) 可使用范围for语句处理多维数组;但必须保证除内层循环之外其他所有循环的变量都是引用类型，否则会导致外层被自动转换为指针类型，导致内层循环不合法。
-.END
+.END 
 
 
 [jekyll-docs]: http://jekyllrb.com/docs/home
