@@ -1,8 +1,8 @@
 # Site settings
-title: Emping
+title: 逐流的喫茶方舟
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Let's Eat!!.
+  咸鱼逐流的自白.
 baseurl: "http://zhuliuabi.com" # the subpath of your site, e.g. /newpath-for-emping
 url: "http://zhuliuabi.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
