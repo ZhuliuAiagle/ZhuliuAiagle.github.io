@@ -1,24 +1,68 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-09-02 10:59:21 +0700
+title:  "Primer学习笔记3（8.2）"
+date:   2017-08-03 1:05:03 +0700
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+3.4 迭代器
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+1) 所有标准库容器都可以使用迭代器，但是其中只有少数几种才同时支持下标运算符；
+2) 迭代器的对象是容器中的元素或者string对象的字符；
+3) 有效的迭代器指向某元素或指向容器中尾元素的下一位置。其他情况都属于无效；
+3.4.1 使用迭代器
 
-Jekyll also offers powerful support for code snippets:
+4) 使用auto关键字标记迭代器；
+5) 有迭代器的类型同时拥有返回迭代器的成员；
+6) begin成员和end（尾后迭代器）成员；
+7) 迭代器支持的运算(*iter,iter->mem,++iter,--iter,==(指向同一元素或同一容器的尾后迭代器),!=)
+8) 迭代器在使用之前要确保容器非空（if(s.begin() != s.end())）
+9) 迭代器++，移动向下一个元素；
+10)TIP:for循环使用!=而非<, 这种编程风格在标准库提供的所有容器中有效(参见P97，泛型编程)
+11)迭代器类型；
+12)begin和end运算符，如果对象是常量，返回const_interator, 如果对象不是常量, 返回iterator;
+13)(C++11)引入新函数，cbegin和cend，无论对象本身常量与否，返回值一定是常量；
+14)(*it).empty()圆括号不可少！注意运算符优先级。.y运算符优先级更高。为了避免错误建议->运算符
+15)任何一种可能改变vector容量的操作，如push_back,都会使迭代器失效；
+3.4.2 迭代器运算
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+1) vector和string支持大于小于等关系运算；
+2) 使用迭代器实现二分搜索;
+3) 迭代器相减表示距离，类型是difference_type。
+3.5 数组
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+1) 复习constexpr；
+2) 数组的维度必须是常量表达式（const，constexpr或字面值，普通变量不行）
+3) 定义数组不许用auto关键字推断类型；
+3.5.2 访问数组元素
+
+4) 字符数组的特殊性：可以用字符串字面值初始化；
+5) 不许拷贝和赋值；
+6) 引用一个数组(&a)[10](数组的引用)，不存在引用的数组！
+7) 举例: int *(&a)[10]引用一个含有十个指针的数组；
+8) 数组下标是size_t类型；
+9) 遍历数组也可以使用范围for语句；
+3.5.3 指针和数组
+
+
+1) 使用数组时编译器一般会转换为指针;
+2) 当使用数组作为auto类型的初始值时，判断的类型是指针而非数组；但必须指出，当使用decltype关键字时转换不会发生；
+3) 指针也是迭代器；
+4) 标准库函数begin和end返回指向首元素和尾元素下一位置的指针，充分而准确地发挥指针迭代器的作用；
+5) 两个指针也可以相减，表示它们的距离，结果类型是ptrdiff_t。
+6) 只要在同一个数组内（包括尾元素下一位置），就可以利用关系运算符进行比较。
+7) 以上情况也适用于空指针和对象非数组的指针；
+3.5.4 C风格字符串(略，详见P109-P110)
+
+3.5.5 与旧代码的接口
+
+1) 混用string对象和C风格字符串, 如允许使用以空字符结束的字符数组来初始化string对象，并且允许其为运算对象之一（不能两个都是).但上述性质反过来就不成立了，旧风格字符串不兼容新风格字符串。如不能用string对象初始化旧风格字符串.
+2) 使用数组初始化vector对象;
+3) 现代C++程序尽量使用vector和迭代器，避免使用内置数组和指针
+3.6 多维数组
+
+1) 可使用范围for语句处理多维数组;但必须保证除内层循环之外其他所有循环的变量都是引用类型，否则会导致外层被自动转换为指针类型，导致内层循环不合法。
+.END
+
 
 [jekyll-docs]: http://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
