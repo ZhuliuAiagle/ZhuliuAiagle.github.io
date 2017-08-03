@@ -3,8 +3,8 @@ title: Emping
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Let's Eat!!.
-baseurl: "" # the subpath of your site, e.g. /newpath-for-emping
-url: "http://example.com" # the base hostname & protocol for your site
+baseurl: "zhuliuabi.com" # the subpath of your site, e.g. /newpath-for-emping
+url: "zhuliuabi.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 GoogleAnalytics: UA-xxxxxx-x
