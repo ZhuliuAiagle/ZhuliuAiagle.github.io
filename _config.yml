@@ -1,16 +1,16 @@
 # Site settings
-title: Emping
-email: your-email@domain.com
+title: 逐流的喫茶方舟
+email: hemmyshen@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Let's Eat!!.
-baseurl: "zhuliuabi.com" # the subpath of your site, e.g. /newpath-for-emping
+  咸鱼逐流的自白.
+baseurl: "" # the subpath of your site, e.g. /newpath-for-emping
 url: "zhuliuabi.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 GoogleAnalytics: UA-xxxxxx-x
 
 twitter:
-  username: rmsubekti
+  username: @hemmyshen
 facebook:
   app_id: 1234567
   publisher: 1234567
