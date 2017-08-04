@@ -3,7 +3,7 @@ layout: default
 avatar: true
 permalink: /
 ---
-## 🚀 最新博文( · ω · )
+## 🚀 Blog( · ω · )
 逐流更新了博文 {% for post in site.posts limit: 1 %}<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>{% endfor %} 
 
 ---
