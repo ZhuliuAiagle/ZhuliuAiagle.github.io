@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Primer学习笔记4（8.4）"
+title:  "Hyperledger Blockchain Fabric架构"
 date:   2017-08-04 17:44:05 +0700
 categories: jekyll update
----
+
+
 #阅读笔记：Hyperledger Blockchain Fabric架构
----
+
 ## 一些不是很了解的生词
 replication：副本<br/>
 invoke：<br/>
