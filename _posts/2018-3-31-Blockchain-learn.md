@@ -6,41 +6,41 @@ categories: jekyll update
 ---
 #阅读笔记：Hyperledger Blockchain Fabric架构
 ---
-##一些不是很了解的生词
-replication：副本
-invoke：
-emulate：与…竞争, 努力赶上
-asset：资产
----
-##关键概念
+## 一些不是很了解的生词
+replication：副本<br/>
+invoke：<br/>
+emulate：与…竞争, 努力赶上<br/>
+asset:资产
 
-###关于peer的介绍
-validating peer:作为在网络上负责运行共识，验证交易和维持账本
+## 关键概念
+
+### 关于peer的介绍
+validating peer:作为在网络上负责运行共识，验证交易和维持账本<br/>
 non-validating peer:作为代理服务器，连接其他的客户到validating peer，本质上就是发布交易。也就是说，他只验证交易而不执行交易。
 
-###immediate finality
+### immediate finality
 拥有准入机制的区块链，交易发生后在极短时间内达成共识并产生最终结果.这和bitcoin不一样，其原因是采用了新的共识算法（拜占庭容错BFT).可用SIEVE的原型来部署非确定性链码，对于单peer可以使用NOOPS（一种协议存根）作为开发服务.
 
-###Permissioned blockchain
-该区块链拥有准入机制
+### Permissioned blockchain
+该区块链拥有准入机制<br/>
 
-###smart contract-->chaincode
-链码，使用go语言实现
+### smart contract-->chaincode
+链码，使用go语言实现<br/>
 
-###CAs
+### CAs
 证书颁发机构，颁发TLS证书来保证安全性
 
-###event
+### event
 拥有支持预定义和自定义事件的框架
 
-###interface
+### interface
 拥有nodejs接口实现的客户端SDK（软件开发工具包），支持REST APIs 和 CLIs
 
----
 
-##Fabric架构
 
-###交易
+## Fabric架构
+
+### 交易
 Fabric上的v-peer可以接受三种交易信息（运用共识算法）：
 **部署交易**
 将用go语言撰写的链码作为参数，安装到peer上准备运行
@@ -49,21 +49,22 @@ Fabric上的v-peer可以接受三种交易信息（运用共识算法）：
 **查询交易**
 直接读取peer状态，返回一些条目
 
-###固有条目
+### 固有条目
 每个链码可以定义在世界状态中自己的固有条目
 
-###hashchain
+### hashchain
 区块链上的哈希链是基于已经执行的交易以及交易产生的状态计算出来的。 
 
-###Validation of transaction
-交易只有在重复执行链码并保证满足拜占庭容错的假设时才有效，举例来说，n个validating peer中有最多$f<(1/3)*n$个节点可能撒谎并产生任意行为，但其他的peer一定会正确运行。当在使用拜占庭容错算法上运行时，链码必须保证其确定性，否则peers的状态可能会产生分叉。一个可以分离出可能会导致分叉的非确定性交易的解决方案已经被证实，并且在实现在SIEVE协议中。
+### Validation of transaction
+交易只有在重复执行链码并保证满足拜占庭容错的假设时才有效，举例来说，n个validating peer中有最多$$ f<(1/3)*n $$个节点可能撒谎并产生任意行为，但其他的peer一定会正确运行。当在使用拜占庭容错算法上运行时，链码必须保证其确定性，否则peers的状态可能会产生分叉。一个可以分离出可能会导致分叉的非确定性交易的解决方案已经被证实，并且在实现在SIEVE协议中。
 
-###safety
+### safety
 由于HyperLedger Fabric实现了拥有准入机制的账本，它得以包含了可以认证和授权的安全架构。支持通过公钥认证来注册和授权交易，通过带内加密保证链码的保密性。
 更准确地说，为了连接到网络，每个peer需要通过**成员服务中的注册证书颁发机构**（CA）获取注册认证。它允许这个peer连接到网络并获取在交易时所需要的交易证书。交易证书颁发机构会发布交易证书并且支持对那些提交交易的节点进行**匿名认证**，从这个意义上讲，多个发布给同一个peer的交易证书（对于注册证书而言也是一样）不会互相产生联系。 
 对于所有拥有注册证书的peer，链码和状态的保密性是通过使用区块链专有的密钥对交易和状态进行对称加密实现的。在将来的版本中，将会扩展加密功能来为交易和状态提供更好的保密性。 
----
-##小结
+
+
+## 小结
 与极客推崇的完全去中心化的系统不同，HyperLedger Fabric是拥有准入机制的多中心化的基于商业用途的区块链平台。它拥有很强的安全性以及身份特征，并且使用了模块化的框架与可插拔的分布式共识。
 
 
