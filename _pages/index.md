@@ -1,6 +1,6 @@
 ---
 layout: default
-avatar: false
+avatar: true
 permalink: /
 ---
 ## 🚀 最新博文( · ω · )
