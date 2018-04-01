@@ -6,7 +6,6 @@ categories: jekyll update
 
 ---
 
-# 阅读笔记：Hyperledger Blockchain Fabric架构
 
 ## 一些不是很了解的生词
 replication：副本<br/>
