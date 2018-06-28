@@ -12,8 +12,8 @@ GoogleAnalytics: UA-xxxxxx-x
 twitter:
   username: hemmyshen
 facebook:
-  app_id: 1234567
-  publisher: 1234567
+  app_id: 12345678
+  publisher: 12345678
 
 sass:
     style: compressed
