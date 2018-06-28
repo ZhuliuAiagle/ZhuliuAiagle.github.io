@@ -11,4 +11,4 @@ permalink: /
 ## 🅿️ 请联系我
 我的私人邮箱：  ``danielshen@yahoo.com ``<br/>
 我的github：   ``https://github.com/ZhuliuAiagle`` <br/>
-挂号信请寄：   浙江省杭州市西湖区浙江大学紫金港校区蓝田一舍 <br/>
+挂号信请寄：   浙江省杭州市西湖区浙江大学玉泉校区学生公寓5栋225 <br/>
