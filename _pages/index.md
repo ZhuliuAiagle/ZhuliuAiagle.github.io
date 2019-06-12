@@ -1,4 +1,5 @@
 ---
+title: 逐流的技术博客 - 我永远单推凑阿夸
 layout: default
 avatar: true
 permalink: /
