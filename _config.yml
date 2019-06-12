@@ -3,8 +3,8 @@ title: 逐流的喫茶店
 email: zijinshen@zju.edu.cn
 description: > # this means to ignore newlines until "baseurl:"
   一条咸鱼的自白.
-baseurl: "http://zhuliuabi.com" # the subpath of your site, e.g. /newpath-for-emping
-url: "http://zhuliuabi.com" # the base hostname & protocol for your site
+baseurl: "https://zhuliuaiagle.github.io/" # the subpath of your site, e.g. /newpath-for-emping
+url: "https://zhuliuaiagle.github.io/" # the base hostname & protocol for your site
 twitter_username: hemmyshen
 github_username:  ZhuliuAiagle
 GoogleAnalytics: UA-xxxxxx-x
