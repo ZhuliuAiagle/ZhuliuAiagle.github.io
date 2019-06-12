@@ -10,6 +10,6 @@ permalink: /
 
 ## 📧 連絡先
 Mail：hemmyshen@gmail.com <br/>
-github：https://github.com/ZhuliuAiagle <br/>
+github：{% include icon-github.html username="ZhuliuAiagle" %} <br/>
 Yuquan Campus, ZJU<br/>
 Hangzhou, P.R. of China<br/>
