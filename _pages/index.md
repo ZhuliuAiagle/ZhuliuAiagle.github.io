@@ -17,6 +17,6 @@ Twitter: {% include icon-twitter.html username="minatoaqua" %}
 ---
 
 ## 📧 連絡先
-Mail：<a href="mailto:http://hemmyshen@gmail.com">hemmyshen@gmail.com</a> <br/>
+E-Mail：<a href="mailto:http://hemmyshen@gmail.com">hemmyshen@gmail.com</a> <br/>
 GitHub：{% include icon-github.html username="ZhuliuAiagle" %} <br/>
 Twitter：{% include icon-twitter.html username="hemmyshen" %} <br/>
