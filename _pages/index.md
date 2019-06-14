@@ -20,5 +20,3 @@ Twitter: {% include icon-twitter.html username="minatoaqua" %}
 Mail：hemmyshen@gmail.com <br/>
 GitHub：{% include icon-github.html username="ZhuliuAiagle" %} <br/>
 Twitter：{% include icon-twitter.html username="hemmyshen" %} <br/>
-Yuquan Campus, ZJU<br/>
-Hangzhou, P.R. of China<br/>
