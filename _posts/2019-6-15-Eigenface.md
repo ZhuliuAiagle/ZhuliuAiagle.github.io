@@ -19,7 +19,7 @@ categories: zijin update
 
 ## Python 代码
 
-```Python
+```python
 '''
 
 Numpy library: Provides a way to handle matrices
