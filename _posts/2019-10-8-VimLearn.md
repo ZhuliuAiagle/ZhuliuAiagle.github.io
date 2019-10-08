@@ -54,7 +54,13 @@ categories: zijin update
 原文表述：until the start of the next word, EXCLUDING its first character.
 
 #### 其他`D<MOTION>`系列命令
+
 * `D$`：删除从光标开始到行末的所有字符；
 * `DE`：同样是删掉一个单词，只到这个单词的最后，但保留上一个单词前的空格。原文表述：to the end of the current word, INCLUDING the last character.
 
+#### 单纯的`<MOTION>`系列命令
 
+不加D，单纯的按动`<MOITION>`对应的键，会将光标放置到删除对应字段后原本该停放的位置（但不会在删除对应字段）。
+* `E`会将光标放到**单词末尾处**；
+* `W`会将光标放到**下一个单词首位**；
+* `$`会将光标放到**行末**。
