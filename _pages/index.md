@@ -1,5 +1,5 @@
 ---
-title: 逐流的技术博客 - 我永远单推凑阿夸
+title: Chubby🐇的技术博客 - 我永远单推凑あくあ
 layout: default
 avatar: true
 permalink: /
