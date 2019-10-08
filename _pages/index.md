@@ -1,5 +1,5 @@
 ---
-title: Chubby🐇的技术博客 - 我永远单推凑あくあ
+title: Chubby🐇的技术博客
 layout: default
 avatar: true
 permalink: /
