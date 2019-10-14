@@ -1,5 +1,5 @@
 ---
-title: Chubby🐇的技术博客
+title: Chubby🐇的桃子园
 layout: default
 avatar: true
 permalink: /
@@ -10,7 +10,7 @@ permalink: /
 ---
 
 ## ⚓ 我的单推
-这里是我单推的推特，她没有走失还是如何，不过你们都应该看看 👇
+这里是我单推的Twitter，她没有走失还是如何，不过你们都应该看看 👇
 
 Twitter: {% include icon-twitter.html username="minatoaqua" %}
 
