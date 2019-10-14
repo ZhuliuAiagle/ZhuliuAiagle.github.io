@@ -17,6 +17,7 @@ Twitter: {% include icon-twitter.html username="minatoaqua" %}
 ---
 
 ## 📧 連絡先
-E-Mail：<a href="mailto:http://hemmyshen@gmail.com">hemmyshen@gmail.com</a> <br/>
+E-Mail（公用）：<a href="mailto:http://hemmyshen@gmail.com">hemmyshen@gmail.com</a> <br/>
+E-Mail（校用）：<a href="mailto:http://zijinshen@zju.edu.cn">zijinshen@zju.edu.cn</a> <br/>
 GitHub：{% include icon-github.html username="ZhuliuAiagle" %} <br/>
 Twitter：{% include icon-twitter.html username="hemmyshen" %} <br/>
