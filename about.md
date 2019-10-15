@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: 关于框架
 permalink: /about/
 avatar: true
 navigation: true
